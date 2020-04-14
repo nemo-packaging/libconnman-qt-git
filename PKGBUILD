@@ -6,15 +6,15 @@
 #set -o errexit
 #set -o xtrace
 
-pkgname=libconnman-qt-git
+pkgname=qt5-connman-git
 pkgver=20200325.60d14a5
 pkgrel=1
 pkgdesc='Qt Quick wrappers for connman'
 arch=('x86_64')
 url='https://git.sailfishos.org/mer-core/libconnman-qt'
 license=('GPL')
-provides=('libconnman-qt')
-conflicts=('libconnman-qt')
+provides=('libconnman-qt' 'qt5-connman')
+conflicts=('libconnman-qt' 'qt5-connman)
 depends=('qt5-tools' 'qt5-base' 'qt5-declarative' 'connman')
 makedepends=('qt5-base')
 source=("git+https://git.sailfishos.org/mer-core/libconnman-qt.git")
